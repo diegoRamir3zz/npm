@@ -76,10 +76,10 @@ Hay dos maneras de empezar un proyecto con npm
   En el package.json se encuentran las versiones de las dependencias que tenemos instaladas.
 
   <i><b>Como funcionan las versiones</b></i>
- <i>ejemplo: </i> version 1.15.0
-  1 = cambio mayor,
-  15 = cambio medios,
-  0 = cambios menores.
+ <i>ejemplo: </i> version 1.15.0 <br>
+  1 = cambio mayor, <br>
+  15 = cambio medios, <br>
+  0 = cambios menores. <br>
 
  <i><b>El caret (^) </b></i>Si este simbolo esta en donde se espesifica la version de la dependencia, significa que permite las actualizaciones de dicha dependencia.
 

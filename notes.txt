@@ -1,0 +1,101 @@
+---------------------------------
+-----------Start project---------
+---------------------------------
+
+Para empezar el proyecto con npm podemos hacerlo de dos maneras.
+
+1) Llenando todos los datos inmediatamente, con el comando
+  command: npm init
+  e indicandole los valores que npm valla requiriendo.
+
+2) Creando un package.json rapido y llenar los datos despues.
+  command: npm init -y
+  El llenara algunos campos automaticamente.
+
+  ********** Establecer datos predeterminados*********
+  npm set init.author.email "(EMAIL)"
+  npm set init.author.name "(NAME)"
+  npm set init.license "(LICENSE)"
+
+  Para ver los archivos creados mediante los comandos volver al commit 
+  6582a26ce2ccbc917fe892e9c4f7c1d16809fbef
+
+---------------------------------------------
+----------- Install dependencies ------------
+---------------------------------------------
+
+Formas de instalar dependencias.
+
+1) npm install (dependencie) = instala la dependecia como parte de nuestro proyecto, solo en la carpeta de nuestro proyecto
+  shortcut: npm i (dependencie) -S
+
+2) npm install (dependencie) --save-dev = instala la dependecia como desarrollo solo en nuestro proyecto
+  shortcut: npm i (dependencie) -D
+
+  Es bueno tener presente que dependencias mandamos al repositorio y cuales no.
+
+**** Cuando se crea la carpeta node_modules debemos evitar enviarla al repositorio.
+Eso lo hacemos con el archivo de gitignore y la incluimos de la siguiente manera.
+
+en el archivo gitignore escribimos: node_modules/*****
+
+******** INSTALAR DEPENDENCIAS GLOBALES*******
+
+  command: sudo npm install -g (dependencie)
+    shortcut: sudo npm i -g (dependencie)
+  
+  Para saber si un paquete se intalo de manera global utilizamos el siguiente comando
+    command: npm list -g --depth 0
+
+******* INSTALAR DEPENDENCIAS DE FORMA OPCIONAL******
+
+  command: npm install (dependencie) -O
+
+****** VER EL OUTPUT DE LA DEPENDECIA *****
+
+  Para ver cuantos archivos instalará una dependecia, sin que la instale utilizamos el siguiente comando
+    command: npm install (dependencie) --dry-run 
+
+***** FORZAR UNA INSTALACION *****
+
+  command: npm install (dependencie) --force
+    shortcut: npm i (dependencie) -f
+
+***** INSTALAR UNA VERSION ESPECIFICA *****
+
+  command npm install (dependencie@version)
+
+------------------------------------------------
+------------- update dependencies --------------
+------------------------------------------------
+
+***** VERIFICAR CUALES NECESITAS ACTUALIZACION *****
+
+  command: npm outdate
+  command: npm outdate --dd = sirve para ver el proceso que realiza por detras
+
+***** ACTUALIZAR EL PAQUETE *****
+
+  command: npm update
+  command: npm install (dependencie@latest) = instalar la ultima version de una dependecia en espesifico
+
+****** ELIMINAR DEPENDENCIAS ******
+
+    command: npm uninstall (dependencie)
+    command: npm uninstall (dependencie) --no-save = elimina de node_modules pero NO del package.json
+
+***** SIMBOLOS *****
+
+  En el package.json se encuentran las versiones de las dependencias.
+
+  COMO FUNCIONAN LAS VERSIONES 
+  ejemplo: version 1.15.0
+  1 = cambio mayor,
+  15 = cambio medios,
+  0 = cambios menores.
+
+ ^ = Significa que va a permitir actualizar las dependencias que tengan el caret (^)
+      si le quitamos el caret (^) Le indicamos que nos queremos solo en esa version y que no 
+      actualice
+
+  ** Inversigar sobre el package-lock.json

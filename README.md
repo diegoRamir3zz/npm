@@ -1,9 +1,9 @@
-<h2>
-My notes <img src="https://img.icons8.com/windows/32/4a90e2/npm.png/>
-</h32>
+<h2 style="text-align: center;">
+My notes <img src="https://img.icons8.com/windows/32/4a90e2/npm.png"/>
+</h2>
 
 
-<h3 style="color: #4a90e2;">Empezando un proyecto</h3>
+<h3>Empezando un proyecto</h3>
 <p>
 Hay dos maneras de empezar un proyecto con npm
 
@@ -18,7 +18,7 @@ Hay dos maneras de empezar un proyecto con npm
   ** Sin los parentesis.
 </p>
 
-<h3 style="color: #4a90e2;">Instalando dependencias</h3>
+<h3>Instalando dependencias</h3>
 
 <p>
 <i><b>Formas de instalar dependencias</b></i>
@@ -56,7 +56,7 @@ Hay dos maneras de empezar un proyecto con npm
   <i>comando: <b>npm install (nombreDependencia@versión)</b></i>
 </p>
 
-<h3 style="color: #4a90e2;">Actualizar dependencias</h3>
+<h3>Actualizar dependencias</h3>
 <p>
 1. Verificar que dependencias necesitas actualización
 

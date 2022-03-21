@@ -124,3 +124,16 @@ Para instalar nuevamente las dependencias que esten en nuestro package.json ejec
 
 <i><b>npm install</b></i>
 </p>
+
+<h3>Seguridad</h3>
+<p>
+Para verificar que nuestro proyecto no tenga ninguna vulnerabilidad corremos el comando <i><b> npm audit</b> o <b>npm audit --json</b></i>
+
+Si tenemos vulnerabilidades debemos actualizar nuestros paquetes. Lo hacemos de la siguiente manera.
+
+<i><b>npm audit fix</b></i>
+
+Esto solucionara todas las vulnerabilidades que hayan en nuestro proyecto. Pero, en caso de que a un archivo no se le haya solucionado la vulnerabulidad corremos el siguiente comando.
+
+<i><b>npm update nombreArchivoVulnerable --depth nivelDeProfundidad (0)</b></i>
+</p>

@@ -148,3 +148,19 @@ Para instalar facilmente las dependecias utilizamos el comando
 npm install
 
 este comando instalara las dependencias que esten en nuestro package.json
+
+-------------------------
+-----Seguridad-----------
+-------------------------
+
+Para verificar que nuestro proyecto no tenga ninguna vulnerabilidad corremos el comando 
+
+npm audit
+npm audit --json
+
+Si tenemos vulnerabilidades debemos actualizar nuestros paquetes. Lo hacemos de la siguiente manera
+
+npm update nombreArchivoVulnerable --depth nivelDeProfundidad (2)
+o podemos reparar todos las vulnerabilidades con el comando 
+
+npm audit fix

@@ -12,8 +12,8 @@ Hay dos maneras de empezar un proyecto con npm
 
 <i><b>Establecer datos predeterminados </b></i>
 
-  <i> npm set init.author.email "(EMAIL)"</i>
-  <i>npm set init.author.name "(NAME)"</i>
-  <i>npm set init.license "(LICENSE)"</i>
+  <i> npm set init.author.email "(EMAIL)"</i><br>
+  <i>npm set init.author.name "(NAME)"</i><br>
+  <i>npm set init.license "(LICENSE)"</i><br>
   ** Sin los parentesis.
 </p>

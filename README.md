@@ -55,3 +55,33 @@ Hay dos maneras de empezar un proyecto con npm
 
   <i>comando: <b>npm install (nombreDependencia@versión)</b></i>
 </p>
+
+<h3>Actualizar dependencias</h3>
+<p>
+1. Verificar que dependencias necesitas actualización
+
+  <i>comando:<b> npm outdate</b></i>
+  Si queremos que procesos realiza npm podemos utilizar el siguiente comando:  <i><b>npm outdate --dd</b></i>
+
+ 2. Actualizar una dependencia 
+
+  <i>comando:<b> npm update</b></i>. Para instalar la ultima versión de una dependencia en espesifico utilizamos el siguiente comando:<i><b> npm install (dependencie@latest)</b></i>
+
+ 3. Eliminar dependencias
+
+    <i>comando: <b>npm uninstall (dependencie)</b></i> Para eliminar la dependencia solo de node_modules pero NO del package.json utilizamos el comando<i><b> npm uninstall (dependencie) --no-save</b></i>
+
+4. Simbolos
+
+  En el package.json se encuentran las versiones de las dependencias que tenemos instaladas.
+
+  <i><b>Como funcionan las versiones</b></i>
+ <i>ejemplo: </i> version 1.15.0
+  1 = cambio mayor,
+  15 = cambio medios,
+  0 = cambios menores.
+
+ <i><b>El caret (^) </b></i>Si este simbolo esta en donde se espesifica la version de la dependencia, significa que permite las actualizaciones de dicha dependencia.
+
+Si le quitamos el caret (^) Le indicamos que no queremos que actualice la dependencia
+</p>

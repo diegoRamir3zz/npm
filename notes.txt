@@ -99,3 +99,52 @@ en el archivo gitignore escribimos: node_modules/*****
       actualice
 
   ** Inversigar sobre el package-lock.json
+
+-------------------------------
+--------------scripts----------
+-------------------------------
+
+Los scripts nos permiten ejecutar archivos desde la consola.
+y esto nos dara una salida segun sea el caso.
+
+Podemos crear la cantidad de scripts que necesitemos. Debemos tratar de que el nombre que le demos 
+a nuestro script sea descriptivo y este en consonancia con lo que va a ejecutar
+
+para ejecutar el script en la consola utilizamos el comando. 
+
+  npm run nombreEscript.
+
+-------------------------------
+------------Errores------------
+-------------------------------
+
+Para solucionar errores activemos la obcion de verbose 
+es decir poder ver el proceso que esta ejecutando npm por detras 
+y que proceso fallo en la ejecucion, para ver todo este proceso utilizamos el comando
+
+  npm run nameScript --dd
+
+Tambien puede que nosotros manejemos una version diferente a la de otro compañero de trabajo, 
+en ese caso podemos eliminar la carpeta de node_modules. Pero, tambien tenemos que limpiar la cache,
+para eso utilizamos el siguiente comando: 
+
+npm cache clean --force
+
+y para verificar que nuestro cache haya sido limpiado podemos hacerlos con el comando 
+
+npm cache verify
+
+Para eliminar la carpeta node_modules utilizamos el comando 
+
+rm -rf node_modules/
+
+Para windows podemos instalar rimraf, que nos permitira eliminar la carpeta de node_modules y para instalarlo utilizamos el comando 
+sudo npm install -g rimraf y para eliminar node_modules utilizamos el siguiente comando
+
+rimraf node_modules
+
+Para instalar facilmente las dependecias utilizamos el comando 
+
+npm install
+
+este comando instalara las dependencias que esten en nuestro package.json

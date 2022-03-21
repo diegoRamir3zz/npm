@@ -85,3 +85,42 @@ Hay dos maneras de empezar un proyecto con npm
 
 Si le quitamos el caret (^) Le indicamos que no queremos que actualice la dependencia
 </p>
+
+<h3>Scripts</h3>
+<p>
+Los scripts nos permiten ejecutar archivos desde la consola y esto nos da una salida segun sea el caso.
+
+Podemos crear la cantidad de scripts que necesitemos y debemos tratar de que el nombre que le demos a nuestro script sea descriptivo y este en consonancia con lo que va a ejecutar.
+
+Para ejecutar nuestros scripts en consola utilizamos el comando.
+
+  <i><b>npm run nombreEscript.</b></i>
+</p>
+
+
+<h3>Errores</h3>
+<p>
+Para solucionar errores debemos activar la obcion de verbose para poder ver el proceso que esta ejecutando npm por detras y que proceso fallo en la ejecucion, para activar el verbose usamos el siguiente comando.
+
+ <i><b> npm run nameScript --dd</b></i>
+
+Tambien puede que nosotros estemos utilizando una version diferente a la de otro compañero de trabajo, en ese caso podemos eliminar la carpeta de node_modules. Pero, tambien tenemos que limpiar la cache, para eso utilizamos el siguiente comando.
+
+<i><b>npm cache clean --force</b></i>
+
+Para verificar que nuestro cache haya sido limpiado corremos el comando.
+
+<i><b>npm cache verify</b></i>
+
+Para eliminar la carpeta node_modules utilizamos el comando
+
+<i><b>rm -rf node_modules/</b></i>
+
+<b>NOTA:</b> Para windows podemos instalar rimraf, que nos permitira eliminar la carpeta de node_modules y para instalar rimraf utilizamos el comando <i><b>sudo npm install -g rimraf </b></i>y para eliminar node_modules con rimraf utilizamos el siguiente comando.
+
+<i><b>rimraf node_modules</b></i>
+
+Para instalar nuevamente las dependencias que esten en nuestro package.json ejecutamos el comando
+
+<i><b>npm install</b></i>
+</p>
